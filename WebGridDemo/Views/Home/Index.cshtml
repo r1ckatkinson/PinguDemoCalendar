@@ -1,0 +1,49 @@
+﻿@model WebGridDemo.ModelView.Calendar
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<head>
+    <style>
+        .myGrid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+        }
+        .myGrid > div {
+            padding: 3px;
+            border: 1px solid;
+        }
+        .monthDay {
+            color: black;
+        }
+        .otherDay {
+            color: grey;
+        }
+        .today {
+            color: red;
+        }
+        .dow {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<div><div class="container">
+    <h1 class="display-4">Calendar Grid</h1>
+    
+    <div class="card">
+        <div class="card-body">
+        <h3>@Model.MonthName</h3>
+            <div class="myGrid">
+                @foreach (var dow in @Enum.GetValues(typeof(Ddow)))
+                {
+                    <div class="dow">@dow</div>
+                }
+                @foreach (var day in Model.MonthDays)
+                {
+                    <div class="@day.DayStyle">@day.DOM</div>
+                }
+            </div>
+        </div>
+    </div>
+</div></div>

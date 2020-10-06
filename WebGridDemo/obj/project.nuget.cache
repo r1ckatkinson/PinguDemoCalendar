@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Luusuo9D+7GfndnGvpTpgxorPAHvqQvR7xACrIw8bkZNk2ynj2UjnbvWXl6cWZKKZBLkG+JpjP6/CORF0TknuA==",
+  "success": true,
+  "projectFilePath": "C:\\GIT\\WebGridDemo\\WebGridDemo\\WebGridDemo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\JAMATK\\.nuget\\packages\\bootstrap\\5.0.0-alpha2\\bootstrap.5.0.0-alpha2.nupkg.sha512",
+    "C:\\Users\\JAMATK\\.nuget\\packages\\popper.js\\1.16.1\\popper.js.1.16.1.nupkg.sha512"
+  ],
+  "logs": []
+}
